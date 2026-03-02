@@ -1,27 +1,20 @@
- class PalindromeCheckerApp{
-
-    // Application constants
-    private static final String APP_NAME = "Palindrome Checker";
-    private static final String APP_VERSION = "Version 1.0";
-
-    // Main method - Entry point of the application
+class PalindromeCheck {
     public static void main(String[] args) {
 
-        displayWelcomeMessage();
+        // Hardcoded string
+        String str = "madam";
+        String reverse = "";
 
-        // Program can continue to next use case here
-        // For UC1, we simply exit after welcome message
+        // Reverse the string
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse = reverse + str.charAt(i);
+        }
 
-        System.out.println("\nApplication is ready.");
-        System.out.println("Exiting application. Goodbye!");
-    }
-
-    // Method to display welcome message
-    private static void displayWelcomeMessage()
-    {
-        System.out.println("=================================");
-        System.out.println("Welcome to " + APP_NAME);
-        System.out.println(APP_VERSION);
-        System.out.println("=================================");
+        // Check palindrome using if-else
+        if (str.equals(reverse)) {
+            System.out.println(str + " is a Palindrome");
+        } else {
+            System.out.println(str + " is not a Palindrome");
+        }
     }
 }
