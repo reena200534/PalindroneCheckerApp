@@ -2,7 +2,7 @@ class PalindromeCheck {
     public static void main(String[] args) {
 
         // Hardcoded string
-        String str = "madam";
+        String str = "radar";
         String reverse = "";
 
         // Reverse the string
